@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="SuiteStudyTest">
+    <test name="goto">
+        <classes>
+            <class name="com.auto.demo.suiteStudy.SuiteConfig"/>
+            <class name="com.auto.demo.suiteStudy.GotoTest" />
+        </classes>
+    </test>
+    <test name="pay">
+        <classes>
+            <class name="com.auto.demo.suiteStudy.SuiteConfig" />
+            <class name="com.auto.demo.suiteStudy.PayTest" />
+        </classes>
+    </test>
+</suite>

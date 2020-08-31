@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name = "GroupClass">
+    <test name = "Test">
+        <classes>
+            <class name = "com.auto.demo.GroupsStudy.GroupClassTea" />
+            <class name = "com.auto.demo.GroupsStudy.GroupsClassStu_01" />
+            <class name = "com.auto.demo.GroupsStudy.GroupsClassStu_02" />
+        </classes>
+    </test>
+
+    <test name=" GroupTest">
+        <groups>
+            <run>
+                <include name="tea"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name = "com.auto.demo.GroupsStudy.GroupClassTea" />
+            <class name = "com.auto.demo.GroupsStudy.GroupsClassStu_01" />
+            <class name = "com.auto.demo.GroupsStudy.GroupsClassStu_02" />
+        </classes>
+    </test>
+</suite>
