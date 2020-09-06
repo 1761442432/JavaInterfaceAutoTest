@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="demo">
+    <test name="paramter">
+        <parameter name="name" value="zhangshan"/>
+        <parameter name="age" value="18"/>
+        <classes>
+            <class name="com.auto.demo.ParametersTest"/>
+        </classes>
+    </test>
+</suite>
