@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--parallel 级别， thread-count 线程池-->
+<suite name="multThread"  parallel="methods"  thread-count="3">
+<!--
+    tests级别：对相同 <test/> tag（标签）下的测试用例，只用一个线程执行
+              对不同 <test/>标签下的测试用例，使用不同的线程执行
+    classs级别：对相同的<classes/> tag（标签）下的测试用例，只使用同一个线程执行
+               对不同的<classes/> tag（标签）下的测试用例，使用不同的线程执行
+    methods级别：表示对每一个测试方法可以多线程
+    thread-count ：表示最大并发数
+    xml文件配置这种方式不支持设置线程池，只有在方法中可以设置线程池（对一个测试方法执行多少次）
+-->
+    <test name="demo_01">
+        <classes>
+            <class name="com.auto.demo.MultThreadOnXmlTest" />
+        </classes>
+    </test>
+    <test name="demo_02">
+        <classes>
+            <class name="com.auto.demo.MultThreadOnXmlTest" />
+        </classes>
+    </test>
+</suite>

@@ -2,6 +2,7 @@
 
 <suite name="demo">
     <test name="paramter">
+<!--        name 表示需要传递的参数名，value表示需要传递的值-->
         <parameter name="name" value="zhangshan"/>
         <parameter name="age" value="18"/>
         <classes>

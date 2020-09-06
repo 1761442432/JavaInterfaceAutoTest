@@ -13,9 +13,11 @@
         <groups>
             <run>
                 <include name="tea"/>
+<!--                如果有多个组，可以 <include/> 多个标签,如下：-->
+<!--                <include name="stu"/>-->
             </run>
         </groups>
-
+<!--        运行组测试，下面必须加上-->
         <classes>
             <class name = "com.auto.demo.GroupsStudy.GroupClassTea" />
             <class name = "com.auto.demo.GroupsStudy.GroupsClassStu_01" />

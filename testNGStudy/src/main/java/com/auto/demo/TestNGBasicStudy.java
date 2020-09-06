@@ -4,12 +4,12 @@ import org.testng.annotations.*;
 
 public class TestNGBasicStudy {
 
-    @Test
+    @Test(description = "你好")
     public void testCase_01(){
         System.out.println("testCase_01方法");
     }
 
-    @Test
+    @Test(enabled = true)
     public void testCase_02(){
         System.out.println("testCase_02方法");
     }

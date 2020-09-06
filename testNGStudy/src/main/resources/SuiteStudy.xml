@@ -2,8 +2,8 @@
 <suite name="SuiteStudyTest">
     <test name="goto">
         <classes>
-            <class name="com.auto.demo.suiteStudy.SuiteConfig"/>
             <class name="com.auto.demo.suiteStudy.GotoTest" />
+            <class name="com.auto.demo.suiteStudy.PayTest" />
         </classes>
     </test>
     <test name="pay">

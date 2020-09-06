@@ -9,6 +9,7 @@ public class ExceptionTest {
      * 一般用于传入一些不合规的参数，期望使程序发生异常时使用
      */
 
+    // 期望发送运行时异常
     @Test(expectedExceptions = RuntimeException.class)
     public void exceptionTest_RuntimeException(){
 
