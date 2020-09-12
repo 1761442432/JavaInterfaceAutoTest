@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="ExtentReport">
+    <test name = "test">
+        <classes>
+<!--            测试用例-->
+            <class name="com.auto.demo.extentReport.BaseDome_01"/>
+        </classes>
+    </test>
+<!--添加监听器，生成测试报告-->
+    <listeners>
+<!--        自带的监听器样式不能展示，并且 cdn.rawgit.com访问不了-->
+<!--        <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>-->
+<!--        所以需要重写监听器-->
+        <listener class-name = "com.auto.demo.extentReport.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+</suite>
