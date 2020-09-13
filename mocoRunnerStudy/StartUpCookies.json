@@ -1,0 +1,36 @@
+[
+  {
+    "description": "需要带cookies的get请求学习",
+    "request": {
+      "uri":"/getDome/Cookies",
+      "method": "get",
+      "cookies": {
+       "login": "true"
+      }
+    },
+    "response": {
+      "text": "这是一个需要带cookies的get请求"
+    }
+  },
+  {
+    "description": "需要带cookie的post请求学习",
+    "request": {
+      "uri": "/postDome/Cookies",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "zhangsan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "zhangsan": "success",
+        "status": "1"
+      }
+    }
+  }
+]

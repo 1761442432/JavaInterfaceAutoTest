@@ -1,6 +1,6 @@
 [
   {
-    "description": "描述：这是第一个moco学习文件",
+    "description": "描述（访问时看不见的）：这是第一个moco学习文件",
     "request": {
       "uri": "/demo_01"
     },

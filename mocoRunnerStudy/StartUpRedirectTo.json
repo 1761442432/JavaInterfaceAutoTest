@@ -1,0 +1,25 @@
+[
+  {
+    "description": "重定向学习，重定向到百度",
+    "request": {
+      "uri": "/Demo/redirectTo/baidu"
+    },
+    "redirectTo": "http://www.baidu.com"
+  },
+  {
+    "description": "重定向学习，重定向到本地",
+    "request": {
+      "uri": "/Demo/redirectTo/toPath"
+    },
+    "redirectTo": "/Demo/redirectTo/new"
+  },
+  {
+    "description": "重定向学习，这是被重定向的地址",
+    "request": {
+      "uri": "/Demo/redirectTo/new"
+    },
+    "response": {
+      "text": "重定向成功啦！"
+    }
+  }
+]

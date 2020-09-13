@@ -1,0 +1,29 @@
+[
+  {
+    "description": "get请求学习",
+    "request": {
+      "uri": "/getDemo",
+      "method": "get"
+    },
+    "response": {
+      "text": "这是一个get请求!",
+      "headers":{
+        "Content-Type":"text/html;charset=utf-8"
+      }
+    }
+  },
+  {
+    "description": "带参数的get请求学习",
+    "request": {
+      "uri": "/getDemoParam",
+      "method": "get",
+      "queries": {
+        "name": "zhangsan",
+        "age":"18"
+      }
+    },
+    "response": {
+      "text": "这是一个带参数的get请求"
+    }
+  }
+]

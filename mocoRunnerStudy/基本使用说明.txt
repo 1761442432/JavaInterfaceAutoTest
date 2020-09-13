@@ -1,2 +1,39 @@
-// 启动文件
-java -jar moco-runner-1.1.0-standalone.jar http -p 12306 -c startUp.json
+// 在终端中输入启动命令。
+    java -jar moco包名 http -p 端口号 -c json文件名
+    如：java -jar moco-runner-1.1.0-standalone.jar http -p 8888 -c StartUp.json
+
+// description ：描述。没啥别的意思，给自己看懂
+    如："description": "重定向学习，重定向到本地"
+
+// request：请求。客户端通过什么地址，怎样的方式，需要携带什么参数 才能请求成功
+   request 可以包含如下参数：
+        uri：请求地址。
+            如："uri": "/postDome/headers"
+        method：请求方式（一般为：post、get）。
+            如："method": "post"
+        headers:头部信息。
+            如："headers": {"Content-type": "application/json;charset=utf-8"}
+        cookies：表明需要携带正确的cookie才能请求成功。
+            如："cookies": {"login": "true"}
+        forms:是post请求带参数类型。参数名 和参数值必须与下面对应，才能成功访问访问时。
+            如："forms": {"name": "zhangsan","age": "18"}
+            访问时，参数传递也必须是 form 格式
+        json：是post请求带参数类型。
+            如："json": {"name": "zhangsan","age": "18"}
+            访问时，参数传递也必须是 json 格式
+        queries:queries 是get请求带参数的类型。参数名 和参数值必须与下面对应，才能成功访问
+            如："queries": {"name": "zhangsan","age":"18"}
+            访问时参数写在url后面，如：127.0.0.1:8888/getDomeParam?name=zhangsan&age=18
+
+// response ：响应信息。当客户端请求成功后，返回给客户端的响应信息
+   response 可以包含的参数如下：
+        status：状态码。可以自己设置，一般设置为200是成功，
+            如："status": 200
+        text：请求成功后，返回一个文本信息。
+            如："text":"请求成功，我是返回的文本信息"
+        json：请求成功后，返回json格式的信息。
+             如："json": {"姓名": "张三","年龄": "18"}
+
+// redirectTo：重定向到某个地址
+    如："redirectTo": "http://www.baidu.com"    重定向到百度
+        "redirectTo": "/Demo/redirectTo/new"   重定向到本地的地址/Demo/redirectTo/new
