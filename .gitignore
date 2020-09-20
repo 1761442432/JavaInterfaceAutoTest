@@ -1,6 +1,9 @@
 # Default ignored files
 !.gitignore
-/.idea/
-/studyTestNG/test-output/
-/studyTestNG/target/
+.idea/
+*target/
+*test-output/
+studyTestNG/test-output/
+studyTestNG/target/
 studyTestNG/studyTestNG.iml
+studyHttpClient/studyHttpClient.iml
