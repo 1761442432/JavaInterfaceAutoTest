@@ -2,11 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.study</groupId>
-    <artifactId>studyTestNG</artifactId>
+<!--    父model（模块）-->
+    <parent>
+        <artifactId>JavaInterfaceAutoTest</artifactId>
+        <groupId>com.study</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+<!--    本model（模块）  （也是子model（模块））-->
+<!--    本model继承了父模块的groudId，所以不用给子模块设置groupId了-->
+    <modelVersion>4.0.0</modelVersion>
     <version>1.0-SNAPSHOT</version>
+    <artifactId>studyTestNG</artifactId>
 
     <dependencies>
 
@@ -35,5 +43,25 @@
         </dependency>
 
     </dependencies>
+
+    <!--    打包配置-->
+    <build>
+        <plugins>
+            <plugin>
+<!--              groupId是  打包插件-->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.7.1</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>
+<!--                            这个是需要执行的xml文件地址，可以让打成的包有个执行的入口-->
+                            .\src\main\resources\SuiteStudy.xml
+                        </suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

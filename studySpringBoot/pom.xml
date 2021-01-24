@@ -2,17 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
-    <!--    父model（模块）-->
     <parent>
         <artifactId>JavaInterfaceAutoTest</artifactId>
         <groupId>com.study</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
-    <!--    本model（模块）  （也是子model（模块））-->
-    <!--    本model继承了父模块的groudId，所以不用给子模块设置groupId了-->
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>studyHttpClient</artifactId>
+
+    <artifactId>studySpringBoot</artifactId>
+
 
 </project>
