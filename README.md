@@ -1,3 +1,3 @@
 # JavaInterfaceAutoTest
-java接口自动化学习仓库（2）
+java接口自动化学习仓库
 
