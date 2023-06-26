@@ -1,5 +1,6 @@
 package com.auto.demo;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TimeOutTest {
@@ -9,6 +10,8 @@ public class TimeOutTest {
     public void timeOutTest_Succeed() throws InterruptedException {
         Thread.sleep(2000);
         System.out.println("测试通过");
+//        校验数据
+        Assert.assertEquals(0,1);
     }
 
     @Test(timeOut = 2000)
